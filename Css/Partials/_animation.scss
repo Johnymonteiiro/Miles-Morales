@@ -1,0 +1,22 @@
+.spiderman{ //Animação da aranha
+    fill: transparent;
+
+    animation:spiderman 12s ease infinite alternate;
+
+}
+@keyframes spiderman{
+    0%{
+        stroke-width:0;
+        stroke-dasharray: 1 100;//mostra a borda da aranha fazendo o efeito
+        fill: transparent;
+    }
+    25%{
+        stroke-width:1;
+        stroke-dasharray:100 0; 
+        fill: transparent;
+    }
+    60%,100%{
+        stroke-width:0.3;
+        fill: $white-dark;
+    }
+}
