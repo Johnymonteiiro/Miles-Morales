@@ -1,0 +1,46 @@
+
+{
+  "Company" :[{
+    
+      "Aplle": {
+        "id":1,
+        "symbol":"AAPL",
+        "companyName":"Apple Inc",
+        "latestPrice": 139.96,
+        "lowPrice": 2.51,
+        "percent": -1.49
+      },
+      "Facebook": {
+        "id":2,
+        "symbol":"FB",
+        "companyName":"Facebok",
+        "latestPrice": 239.46,
+        "lowPrice": 3.49,
+        "percent": 2.49
+      },
+      "Microsoft": {
+        "id":3,
+        "symbol":"MSFT",
+        "companyName":"Microsoft",
+        "latestPrice": 329.16,
+        "lowPrice": 1.49,
+        "percent": -0.49
+      },
+      "Amazon": {
+        "id":4,
+        "symbol":"AMZN",
+        "companyName":"Amazon",
+        "latestPrice": 429.06,
+        "lowPrice": 3.09,
+        "percent": -1.05
+      },
+      "Adobe": {
+        "id":5,
+        "symbol":"AXD",
+        "companyName":"Adobe",
+        "latestPrice": 201.89,
+        "lowPrice": 1.79,
+        "percent": -2.49
+      }
+  }]
+}

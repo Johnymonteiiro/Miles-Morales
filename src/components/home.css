@@ -1,0 +1,212 @@
+/*=============== ROOT ===============*/
+:root {
+
+    /*======= FONT FAMILY ======*/
+    --body-font: 'Graphik';
+   
+    /* FONT-SIZE */
+    --h1-font-size:2.5rem;
+    --h2-font-size:1.25rem ;
+    --normal-font-size:1rem;
+    --small-font-size: .5rem;
+  
+    /*========== FONT WEIGHT ==========*/
+    --font-medium:400 ;
+    --font-bold:500 ;
+  
+    /*========== MARGIN ==========*/
+    --mb-1:.5rem ;
+    --mb-2:1rem ;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6:3rem ;
+  
+    /*========== z index ==========*/
+    --z-tooltip:10 ;
+    --z-fixed:100 ;
+    --z-normal:1 ;
+  
+    /* COLOR PALET */
+    --primary-color:#0047BB; 
+    --secund-color:#F06400;
+    --danger-color:#D64B45;
+    --sucess-color:#79C300;
+    --white-color:#FFFFFF;
+    --text-color:#657786;
+    --text-color-light:#ACACAC;
+    --text-color-dark:#14171A;
+    --blue-color:#F5F8FA;
+
+  }
+.bd{
+    border: 3px solid blue;
+}
+.bd-grid{
+    display:grid;
+    gap:1.5rem;
+}
+.App-content{
+    display: flex;
+    width:100%;
+}
+.dashboard-home{
+    width:65%;
+    height: 100%;
+    background-color:var(--blue-color);
+    border-radius: 24px 0px 0px 0px;
+    padding: 0 var(--mb-4) var(--mb-6) var(--mb-4);
+}
+.home-favorite{
+    width:35%;
+    margin-top:1.2rem;
+    padding: 0 var(--mb-4) var(--mb-6) var(--mb-4);
+}
+.dashboard-content{
+    margin-top:3.2rem;
+}
+.tilte_logo{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.dash-tilte{
+    padding-left: var(--mb-2);
+    font-size:clamp(30px, 2vw,60px);
+    color: var(--text-color-dark);
+    margin-top: -.5rem;
+}
+.dash-logo{
+    width: 40px;
+    height: 40px;
+}
+.dash-search{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.input-area{
+    width: 380px;
+    height: 55px;
+    padding:8px 16px 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #E1E0E7;
+    outline: none;
+}
+input::placeholder,.input-area{
+   font-weight:500;
+   font-size:1.3rem;
+   line-height: 20px;
+   color: var(--text-color-light);
+}
+.search-svg{
+    position: absolute;
+    left:10px;
+    width:40px;
+}
+.search-icon{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left:-5px;
+    width:60px;
+    height: 55px;
+    background-color: var(--primary-color);
+    padding:8px 16px 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+.rechart{
+    width: 100%;
+    padding:0 var(--mb-2) var(--mb-6) var(--mb-2);
+    background-color:var(--white-color);
+    margin-top: var(--mb-5);
+    box-shadow: 0px 4px 12px rgba(222, 222, 231, 0.4);
+    border-radius: 8px;
+}
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:150px;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+.info-content{
+    display: flex;
+    align-items: center;
+}
+.price-company{
+    margin-right: 26px;
+}
+.fav-star{
+    margin:var(--mb-3);
+    cursor:pointer;
+    transition: .5s;
+}
+/*---- Tooltypy -------*/
+.typpy{
+    position: relative;
+    top:-5px;
+    color:var(--white-color);
+    width: 220px;
+    border-radius:4px;
+    background-color: var(--primary-color);
+    font-size:20px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.fav-star:hover{
+    transform: translateY(-5px);
+ }
+.star-one{
+    width: 35px;
+}
+.abreviation-name{
+    font-size:clamp(1.1em, 1.2vw,2em);
+    color: var(--text-color-dark);
+    font-weight: bold;
+    line-height: 20px;
+}
+.company-name{
+   font-size:clamp(1.1em, 1.2vw,2em);
+    margin-top: .4rem;
+    color: var(--text-color-light); 
+}
+.graphDown{
+    display: flex;
+    align-items: center;
+    padding-bottom:4px;
+    margin-left:35px;
+}
+.price-up{
+    width:30px;
+    margin-right:5px;
+}
+.price{
+    color: var(--text-color-dark);
+   font-size:clamp(1.1em, 1.1vw,2em);
+    font-weight: bold;
+}
+.price-percent{
+    color: var(--danger-color);
+    font-size:clamp(1.1em, 1.1vw,2em);
+    font-weight: bold;
+}
+
+/*======= Media Quires =====*/
+
+@media screen and (max-width:1400px) {
+    .App-content{
+        display:block;
+    }
+    .dashboard-home{
+        width:100%;
+        border-radius: 50px 0px 0px 0px;
+        padding-top:2px;
+    }
+    .home-favorite{
+        display: none;
+    }
+  }

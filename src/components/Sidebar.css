@@ -1,0 +1,125 @@
+
+/*=============== ROOT ===============*/
+:root {
+
+  /*======= FONT FAMILY ======*/
+  --body-font: 'Graphik';
+ 
+  /* FONT-SIZE */
+  --h1-font-size:1.5rem;
+  --h2-font-size:1.25rem ;
+  --normal-font-size:1rem;
+  --small-font-size: .5rem;
+
+  /*========== FONT WEIGHT ==========*/
+  --font-medium:400 ;
+  --font-bold:500 ;
+
+  /*========== MARGIN ==========*/
+  --mb-1:.5rem ;
+  --mb-2:1rem ;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6:3rem ;
+
+  /*========== z index ==========*/
+  --z-tooltip:10 ;
+  --z-fixed:100 ;
+  --z-normal:1 ;
+
+  /* COLOR PALET */
+  --primary-color:#0047BB; 
+  --secund-color:#F06400;
+  --danger-color:#D64B45;
+  --sucess-color:#79C300;
+  --white-color:#FFFFFF;
+  --text-color:#657786;
+  --text-color-dark:#14171A;
+  --blue-color:#F5F8FA;
+}
+
+.navbar {
+    display:none;
+  }
+  
+  .menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+  }
+
+  .nav-menu {
+    background-color:var(--text-color-dark);
+    width: 330px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index:100;
+    opacity: 0.9;
+    transition: 850ms;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+    transition: 350ms;
+  }
+  
+  .nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+  }
+  
+  .nav-text a {
+    text-decoration: none;
+    color:var(--white-color);
+    font-size:25px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
+  
+  .nav-text a:hover {
+    background-color:var(--primary-color);
+  }
+
+  .nav-menu-items {
+    width: 100%;
+  }
+  
+  .navbar-toggle {
+    background-color:var(--text-color-dark);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  span {
+    margin-left: 16px;
+  }
+
+  @media screen and (max-width:1400px) {
+    .navbar {
+      z-index: 100;
+      position:fixed;
+      width: 100%;
+      background-color:var(--white-color);
+      height: 100px;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+    }
+  }
+  

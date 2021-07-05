@@ -1,0 +1,55 @@
+/*=============== ROOT ===============*/
+:root {
+
+    /*======= FONT FAMILY ======*/
+    --body-font: 'Graphik';
+   
+    /* FONT-SIZE */
+    --h1-font-size:2.5rem;
+    --h2-font-size:1.25rem ;
+    --normal-font-size:1rem;
+    --small-font-size: .5rem;
+  
+    /*========== FONT WEIGHT ==========*/
+    --font-medium:400 ;
+    --font-bold:500 ;
+  
+    /*========== MARGIN ==========*/
+    --mb-1:.5rem ;
+    --mb-2:1rem ;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6:3rem ;
+  
+    /*========== z index ==========*/
+    --z-tooltip:10 ;
+    --z-fixed:100 ;
+    --z-normal:1 ;
+  
+    /* COLOR PALET */
+    --primary-color:#0047BB; 
+    --secund-color:#F06400;
+    --danger-color:#D64B45;
+    --sucess-color:#79C300;
+    --white-color:#FFFFFF;
+    --text-color:#657786;
+    --text-color-light:#ACACAC;
+    --text-color-dark:#14171A;
+    --blue-color:#F5F8FA;
+}
+
+.custom-tooltip{
+    display: flex;
+    width:100px;
+    height:40px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    align-items: center;
+}
+.tooltip{
+    font-size:20px;
+    font-weight: 400;
+    color: var(--white-color);
+    margin-left:25%;
+}

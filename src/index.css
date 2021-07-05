@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/*=============== ROOT ===============*/
+:root {
+
+  /*======= FONT FAMILY ======*/
+  --body-font: 'Graphik';
+ 
+  /* FONT-SIZE */
+  --h1-font-size:1.5rem;
+  --h2-font-size:1.25rem ;
+  --normal-font-size:1rem;
+  --small-font-size: .5rem;
+
+  /*========== FONT WEIGHT ==========*/
+  --font-medium:400 ;
+  --font-bold:500 ;
+
+  /*========== MARGIN ==========*/
+  --mb-1:.5rem ;
+  --mb-2:1rem ;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6:3rem ;
+
+  /*========== z index ==========*/
+  --z-tooltip:10 ;
+  --z-fixed:100 ;
+  --z-normal:1 ;
+
+  /* COLOR PALET */
+  --primary-color:#0047BB; 
+  --secund-color:#F06400;
+  --danger-color:#D64B45;
+  --sucess-color:#79C300;
+  --white-color:#FFFFFF;
+  --text-color:#657786;
+  --text-color-dark:#14171A;
+  --blue-color:#F5F8FA;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/*==================== BASE ====================*/
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family: var(--body-font);
+    background-color:var(--white-color);
+    color: var(--text-color);
+    line-height:19.6px;
+  }
+  h1,h2,h3,ul,p{
+    margin: 0;
+  }
+  h2,h3{
+    padding: 0;
+    font-weight: var(--font-semi-bold);
+  }
+  ul{
+    padding: 0;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
